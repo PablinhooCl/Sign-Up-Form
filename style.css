@@ -70,7 +70,7 @@ body{
 
 
 .left-side{
-    background: no-repeat url("/resource/vinland-bg.png");
+    background: no-repeat url(/resource/vinland-bg.png);
     display:flex;
     flex-direction: column;
     align-content: center;
