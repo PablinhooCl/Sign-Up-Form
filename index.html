@@ -30,20 +30,23 @@
         <form class="formatoGrid" action="#" method="get">
             <div> 
                 <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name" required>
+                <br>
+                <input type="text" id="first_name" name="first_name" >
             </div>
 
            
 
             <div>
                 <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name" required>
+                <br>
+                <input type="text" id="last_name" name="last_name" >
             </div>
 
             
 
             <div>   
                 <label for="user_email">Email</label>
+                <br>
                 <input type="email" id="user_email" name="user_email" required>
             </div>
 
@@ -51,6 +54,7 @@
 
             <div>   
                 <label for="numero">Phone Number</label>
+                <br>
                 <input type="text" id="numero" name="numero" pattern="[+]?\d+"  />
             </div>
             
@@ -58,6 +62,7 @@
           
             <div>
               <label for="user_password">Password</label>
+              <br>
               <input type="password" id="user_password" name="user_password" required>
             </div>
 
@@ -65,10 +70,16 @@
           
             <div>
               <label for="user_password_confirmed">Confirm password</label>
+              <br>
               <input type="password" id="user_password_confirmed" name="user_password_confirmed" required>
             </div>
-        <button class="create">Create Account</button>
-    </form>
+
+
+        <input type="button" class="create" value="Create Account" onclick="passwordChecker()"/>
+
+        <p id="message"></p> 
+
+      </form>
         <div class="haveAccount">Already have account <a href="">Log in</a></div>
     </div>
 
@@ -80,5 +91,9 @@
 
     <!--                FOOTER                       -->
     <div class="footer">Copyright © PablinhooCl Inc.</div>
+
+
+   <script src="script.js"></script> 
 </body>
+
 </html>
